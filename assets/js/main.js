@@ -38,7 +38,6 @@
 						images: {
 							'images/bg01.jpg': 'center',
 							'images/bg02.jpg': 'center',
-							'images/bg03.jpg': 'center'
 						},
 
 					// Delay.
@@ -136,7 +135,7 @@
 
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
-				// $form.addEventListener('submit', function(event) {
+				 $form.addEventListener('submit', function(event) {
 
 					//event.stopPropagation();
 					//event.preventDefault();
@@ -162,7 +161,7 @@
 					//			$message._show('success', 'Thank you!');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
-						}, 750);
+					//	}, 750);
 
 				});
 
