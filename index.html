@@ -21,11 +21,21 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="POST" action="https://formsubmit.co/khochtali.hamda@gmail.com">
-  <input type="email" name="email" id="email" placeholder="Enter your email to join the waitlist" required />
-   <input type="hidden" name="_captcha" value="false">
+			<form id="signup-form" method="POST" action="https://formsubmit.co/khochtali.hamda@gmail.com" target="hidden_iframe" onsubmit="showThankYou()">
+  <input type="email" name="email" placeholder="Enter your email to join the waitlist" required />
+  <input type="hidden" name="_captcha" value="false">
   <input type="submit" value="Notify Me" />
 </form>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+<p id="thank-you-message" style="display:none; color:white; margin-top:10px;">Thank you!</p>
+
+<script>
+  function showThankYou() {
+    document.getElementById("thank-you-message").style.display = "block";
+  }
+</script>
 
 		<!-- Footer -->
 			<footer id="footer">
